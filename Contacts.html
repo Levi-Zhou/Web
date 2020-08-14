@@ -1,0 +1,181 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kreon:wght@600&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/logo" href="img/icon.jpg"/>
+        <title>Contacts-LEVI Store</title>
+      </head>
+<body>
+    <div id="container" style="position: relative; min-width: 1900px;">
+        <div class = "header" id="header">
+          <header class="mainHeader">
+            <div class="logo">
+              <a herf="index.html">
+                  <img src="img/official_icon2..jpg" alt="levilogo">
+              </a>
+            </div>
+    
+            <div class="header_option">
+                <u1>
+                  <li><a href="#"> Login </a></li>
+                  <li><a href="#"> Sign Up </a></li>
+                </u1>
+              </div>
+          </header>
+    
+          <nav class = "mainNav" id = "mainNav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class = "dropdown" id = "shop"><a href="#">Shop <i class="fa fa-caret-down"></i></a>
+                <div class = "dropdown-content">
+                  <a href="RGB-Keyboards.html"><div id = "Keyboard"> RGB Keyboards </div></a>
+                  <a href="Non-RGB-KEyboard.html"><div id="keybaord2"> Non-RGB Keyboards</div></a>
+                  <a href="Accessories.html"><div id = "Accessories"> Accessories </div></a>
+                </div>
+              </li>
+              <li class = "dropdown" id ="new"><a href="#"> Help <i class="fa fa-caret-down"></i></a>
+                <div class = "dropdown-content">
+                  <a href="FAQ.html"><div id="FAQ"> FAQ </div></a>
+                  <a href="Order Track.html"><div id="Track"> Order Track </div></a>
+                  <a href="Firmware & Upgrade.html"><div id="Firmware"> Firmware & Upgrade </div></a>
+                  <a href="Refund Policy.html"><div id="Refund"> Refund Policy</div></a>
+                </div>
+              </li>
+              <li class = "dropdown" id = "info"><a href="#">Information <i class="fa fa-caret-down"></i></a>
+                <div class = "dropdown-content">
+                  <a href="Contacts.html"> Contacts </a>
+                </div>
+              </li>
+          </nav>
+        </div>
+    
+        <div class = "main_section" id ="main_section">
+          <div class= "section_contents" id = "section_contents">
+          <section id = "section1">
+            <div class = "long"> </div>
+            </section>
+          </div>
+        </div>
+        
+        <section class="contact">
+            <div class="container">
+              <form action="https://httpbin.org/post" method="POST">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your First Name"  required/>
+    
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Last Name" required/>
+    
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="mail" placeholder="Your E-mail" required/>
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your Address" required/>
+
+                <label for="city">City</label>
+                <input list="city" type="text" name="city" placeholder="Choose Your City" id="input-city" required/>
+                    <datalist id="city">
+                        <option label="Toronto" value="Toronto"></option>
+                        <option label="Vancouver" value="Vancouver"></option>
+                        <option label="Montreal" value="Montreal"></option>
+                        <option label="Niagara Falls" value="Niagara Falls"></option>
+                        <option label="Victoria" value="Victoria"></option>
+                        <option label="Halifax" value="Halifax"></option>
+                        <option label="Quebec City" value="Quebec City"></option>
+                        <option label="Calgary" value="Calgary"></option>
+                        <option label="Ottawa" value="Ottawa"></option>
+                        <option label="Edmonton" value="Edmonton"></option>
+                    </datalist>
+
+                <label for="postalcode">Postal code</label>
+                <input placeholder="Postal Code"id="posteCode" name="posteCode" class="form-control" type="text" autocomplete="postal-code" pattern="^[a-zA-Z]\d[a-zA-Z] ?\d[a-zA-Z]\d$" tabindex="7" required/>
+                <br /><br />
+
+                <div class="form-row">
+                 
+                          <div class="col mb-3" id="radioOptions">
+                        
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input id="radioQuestion" name="radioControl" type="radio" class="custom-control-input" tabindex="10" checked required/>
+                              <label class="custom-control-label" for="radioQuestion">Question</label>
+                            </div>
+                     
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input id="radioComment" name="radioControl" type="radio" class="custom-control-input"/>
+                              <label class="custom-control-label" for="radioComment">Comment</label>
+                            </div>
+                         
+                            <div class="custom-control custom-radio custom-control-inline">
+                              <input id="radioOrder" name="radioControl" type="radio" class="custom-control-input" />
+                              <label class="custom-control-label" for="radioOrder">Order Problem</label>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <div class="form-row" id="OrderNumberBox" hidden>
+                          <div class="col-md-4 mb-3">
+                            <label for="orderNumInfo">Order Number</label>
+                            <input name="orderNumInfo"id="orderNumInfo" class="form-control"type="text"placeholder="Order Number"tabindex="11"/>
+                         
+                          </div>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6 mb-3">
+
+                            <label for="messageInfo">Message</label>
+                            <textarea name="messageInfo" id="messageInfo" class="form-control" rows="6" tabindex="12"required >
+                          </textarea>
+                          </div>
+                        </div>
+                        <input type="hidden" name="hidden-name" value="Guo Chao (Levi) Zhou" />
+    
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </section>
+
+          <footer>
+            <div class="aboutUs">
+              <h4 class="store">Store</h4>
+              <a href="https://www.amazon.ca/"><i class="fa fa-amazon fa-lg"></i> <span>Amazon</span></a>
+            </div>
+          
+            <div class="follow1">
+              <h4 class="followus">Follow Us</h4>
+              <li>
+                <a href="https://twitter.com/explore"><i class="fa fa-twitter fa-lg"></i> <span>Twitter</span></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/marketplace/"><i class="fa fa-facebook-official fa-lg"></i> <span>Facebook</span></a>
+              </li>
+              
+            </div>
+          
+            <div class="newsletter">
+              <h4 class="news">Newsletter</h4>
+              <p>Sign up for the latest news, offers and more</p>
+          
+              <div class="myform">
+                <form method="POST" action="/contact#contact_form" id="contact#contact_form" accept-charset="UTF-8" class="contact-form"></form>
+              </div>
+            </div>
+          
+            <form action="https://formspree.io/xlewrjga" method="POST" class="footer-form">
+              <label class="footer-contact">
+                <input type="email" name="_replyto" placeholder="Your Email" />
+              </label>
+              <button type="submit">Send</button>
+            </form>
+          
+          
+            </footer>
+
+
+    </div>  
+</body>
+</html>
